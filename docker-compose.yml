@@ -1,0 +1,10 @@
+version: "3.3"
+
+services:
+  notebook:
+    build: .
+    image: jupyter-nlp
+    volumes:
+      - ./work:/home/jovyan/work
+    ports:
+      - 8888:8888
